@@ -1,0 +1,7 @@
+.taskdashboard {
+  margin: 10px;
+  background-color: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
+  font-family: inherit;
+  border-radius: 10px;
+}

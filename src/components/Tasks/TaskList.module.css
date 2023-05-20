@@ -1,0 +1,5 @@
+.tasklist {
+  color: var(--color-fg-default);
+  padding-left: 30px;
+  line-height: 1.5em;
+}
