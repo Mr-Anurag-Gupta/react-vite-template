@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Loading from "../../ui/Loader/Loading";
 import classes from "./TaskList.module.css";
 
 export default function TaskList() {
@@ -35,9 +36,7 @@ export default function TaskList() {
 
   return (
     <div className={classes.tasklist}>
-      {loading && (
-        <div className={classes.tasklist__loading_message}>Loading...</div>
-      )}
+      {loading && <Loading />}
       {!loading && tasks?.count === 0 && (
         <div className={classes.tasklist__tasknotfound_message}>
           No task found.
